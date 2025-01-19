@@ -1,0 +1,52 @@
+.contact-us{
+    position: relative;
+    width: 80vw; 
+    overflow: hidden;
+}
+
+
+.Koji{
+    position: absolute;
+    transform: scale(0.8);
+    top: -14%;
+    right: -290%;
+}
+
+.logo2{
+    z-index: 2;
+    position: absolute;
+    top: 7%;
+    right: -280%;
+}
+
+.contact-section{
+    height: 100px;
+    width: 311px;
+    position: absolute;
+    bottom: 25%;
+    left: 360%;
+    
+
+}
+
+.contact-section h2{
+    text-align: end;
+}
+.social-icon{
+    margin: 15px;
+}
+
+.line{
+    position: absolute;
+    bottom: 6%;
+    left: 339%;
+}
+
+.uni{
+    width: 600px;
+    text-align: end;
+    position: absolute;
+    left: 340%;
+    bottom: -1.4%;
+}
+

@@ -1,0 +1,56 @@
+
+.about-us {
+    
+    position: relative;
+    width: 100vw; 
+    overflow: hidden; 
+    
+    
+  }
+  
+  .about-us-content h1 {
+    position: absolute;
+    top: 10%; 
+    right: 30%;
+    transform: scale(2);
+    font-size: 2rem; 
+    
+  }
+.moksha-dream{
+    position:absolute;
+    top: 20%;
+    left: 25%;
+    height: 800px;
+    width: 750px;
+
+}
+
+.moksha-dream2{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    height: 800px;
+    width: 750px;
+
+}
+.moksha-dream2 h1{
+    text-align: end;
+}
+
+
+.throne{
+    position: absolute;
+    z-index: -1;
+    top: -16%;
+    left: -8%;
+    transform: scale(0.8);
+}
+
+.about_us2{
+    z-index: -1;
+    position: absolute;
+    bottom: -8%;
+    left: -20%;
+}
+  
+  

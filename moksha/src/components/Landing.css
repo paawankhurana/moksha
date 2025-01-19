@@ -1,0 +1,89 @@
+.landing-page
+ {
+  width: 100vw;
+  height: 100vh; 
+  flex-shrink: 0;
+  scroll-snap-align: start; 
+   position: relative;
+}
+
+
+.moksha-container {
+  position: absolute;
+  z-index: 2; 
+  text-align: center;
+  top: 50%; 
+  left: 45%; 
+  transform: translate(-50%, -50%) scale(3);
+}
+
+
+.logo {
+  width: 50%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.dragon {
+
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-60%)translateY(-5%);
+    z-index: 1;
+    width: 80%; 
+    opacity: 0.9;
+  
+}
+
+.dragon-tail {
+  position: absolute;
+  top: -5%; 
+  left: 78%;
+  transform: translateX(-55%)translateY(20%) ;
+  z-index: 0; 
+  width: 50%; 
+  /* rotate(20deg) */
+}
+
+.cloud{
+  position: absolute;
+  bottom: 0; 
+  left: -10rem; 
+  z-index: 0; 
+  opacity: 0.3;
+  filter: brightness(0.9) contrast(1.2);
+ 
+  
+}
+
+.cloud-top-right {
+  position: absolute;
+  top: 10%; 
+  right: 10%; 
+  z-index: 1; 
+  width: 150px;
+  opacity: 0.3;
+  filter: brightness(0.9) contrast(1.2);
+ 
+  transform: scale(6);
+}
+.scale1 {
+  position: absolute;
+  bottom: 0; 
+  left: 60%;   
+  z-index: 1; 
+  width: 100px; 
+  opacity: 0.8; 
+  transform: scale(5);
+}
+
+.scale2 {
+  position: absolute;
+  bottom: 0; 
+  left: 90%;   
+  z-index: 1; 
+  width: 100px; 
+  opacity: 0.8; 
+  transform: scale(5);
+}

@@ -1,0 +1,57 @@
+.Events {
+   
+    position: relative;
+    width: 100vw; 
+    overflow: hidden; 
+    overflow-y: hidden;
+ }
+
+
+
+.stone1{
+    z-index: -1;
+    position: absolute;
+    transform: scale(0.7);
+    left: -30%;
+    top: -15%;
+}
+
+.day3{
+    position: absolute;
+    right: 8%;
+    top: 20%;
+    transform: scale(0.8);
+}
+
+.day2{
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    transform: scale(0.8);
+}
+
+.day1{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: scale(0.8);
+
+}
+
+.cloud{
+    z-index: 2;
+    position: absolute;
+    filter: brightness(1.5); 
+  transition: filter 0.3s ease-in-out; 
+    
+    
+    
+}
+
+.stone2{
+    transform: scale(0.8);
+    position: absolute;
+    z-index: -1;
+    bottom: -10%;
+    right: -35%;
+}
