@@ -1,22 +1,20 @@
-.landing-page
- {
+ 
+.landing-page {
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   flex-shrink: 0;
-  scroll-snap-align: start; 
-   position: relative;
+  scroll-snap-align: start;
+  position: relative;
 }
-
 
 .moksha-container {
   position: absolute;
-  z-index: 2; 
+  z-index: 2;
   text-align: center;
-  top: 50%; 
-  left: 45%; 
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(3);
 }
-
 
 .logo {
   width: 50%;
@@ -25,65 +23,181 @@
 }
 
 .dragon {
-
-    position: absolute;
-    top: 20%; 
-    left: 50%;
-    transform: translateX(-60%)translateY(-5%);
-    z-index: 1;
-    width: 80%; 
-    opacity: 0.9;
-  
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-60%) translateY(-5%);
+  z-index: 1;
+  width: 80%;
+  opacity: 0.9;
 }
 
 .dragon-tail {
   position: absolute;
-  top: -5%; 
-  left: 78%;
-  transform: translateX(-55%)translateY(20%) ;
-  z-index: 0; 
-  width: 50%; 
-  /* rotate(20deg) */
+  top: -5%;
+  left: 70%;
+  transform: translateX(-55%) translateY(20%);
+  z-index: 0;
+  width: 50%;
 }
 
-.cloud{
+.cloud {
   position: absolute;
-  bottom: 0; 
-  left: -10rem; 
-  z-index: 0; 
+  bottom: 0;
+  left: -10rem;
+  z-index: 0;
   opacity: 0.3;
   filter: brightness(0.9) contrast(1.2);
- 
-  
 }
 
 .cloud-top-right {
   position: absolute;
-  top: 10%; 
-  right: 10%; 
-  z-index: 1; 
+  top: 10%;
+  right: 10%;
+  z-index: 1;
   width: 150px;
   opacity: 0.3;
   filter: brightness(0.9) contrast(1.2);
- 
   transform: scale(6);
 }
+
 .scale1 {
   position: absolute;
-  bottom: 0; 
-  left: 60%;   
-  z-index: 1; 
-  width: 100px; 
-  opacity: 0.8; 
+  bottom: 0;
+  left: 60%;
+  z-index: 1;
+  width: 100px;
+  opacity: 0.8;
   transform: scale(5);
 }
 
 .scale2 {
   position: absolute;
-  bottom: 0; 
-  left: 90%;   
-  z-index: 1; 
-  width: 100px; 
-  opacity: 0.8; 
+  bottom: 0;
+  left: 90%;
+  z-index: 1;
+  width: 100px;
+  opacity: 0.8;
   transform: scale(5);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .moksha-container {
+    transform: translate(-50%, -50%) scale(2);
+  }
+
+  .dragon {
+    width: 70%;
+  }
+
+  .dragon-tail {
+    width: 40%;
+  }
+
+  .cloud-top-right {
+    transform: scale(4);
+  }
+
+  .scale1, .scale2 {
+    transform: scale(4);
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .moksha-container {
+    top: 45%; /* Adjust slightly for better centering */
+    transform: translate(-50%, -45%) scale(1.8); /* Scale up logo for better visibility */
+  }
+
+  .dragon {
+    width: 70%; /* Increase dragon size for better prominence */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%) scale(1.2); /* Keep it visually balanced */
+  }
+
+  .dragon-tail {
+    width: 45%; /* Scale up for better visibility */
+    top: 15%; /* Adjust to align with the dragon */
+    right: 0%; /* Slightly inward for alignment */
+    transform: translateX(0) translateY(10%); /* Fine-tune position */
+  }
+
+  .cloud {
+    left: -3rem; /* Bring it slightly inward */
+    bottom: -1rem; /* Ensure it's visible */
+    transform: scale(1.3); /* Adjust size */
+  }
+
+  .cloud-top-right {
+    top: 5%; /* Adjust position */
+    right: 5%; /* Align better with dragon */
+    transform: scale(4); /* Ensure visibility */
+  }
+
+  .scale1 {
+    bottom: 3rem; /* Bring upward for visibility */
+    left: 50%; /* Center it */
+    transform: scale(4); /* Increase size */
+  }
+
+  .scale2 {
+    bottom: 3rem; /* Bring upward for visibility */
+    left: 80%; /* Adjust for better spacing */
+    transform: scale(4); /* Increase size */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .moksha-container {
+    top: 40%; /* Move logo slightly upward */
+    transform: translate(-50%, -40%) scale(1.8); /* Adjust scale for better visibility */
+  }
+
+  .logo {
+    width: 80%; /* Make logo larger on smaller screens */
+    max-width: none; /* Remove max-width limitation */
+  }
+
+  .dragon {
+    top: 45%; /* Keep the dragon centered */
+    transform: translate(-50%, -45%) scale(1.3); /* Increase dragon size */
+    width: 100%; /* Make dragon fill the screen horizontally */
+  }
+
+  .dragon-tail {
+    top: 20%; /* Adjust tail position */
+    right: 20%; /* Bring it slightly inward */
+    transform: translateX(0) scale(1.2); /* Make the tail slightly bigger */
+    width: 60%; /* Adjust width for responsiveness */
+  }
+
+  .cloud {
+    bottom: -2rem; /* Adjust cloud position for visibility */
+    left: -5rem; /* Bring it slightly inward */
+    opacity: 0.4; /* Increase visibility slightly */
+    transform: scale(1.5); /* Make the cloud larger */
+  }
+
+  .cloud-top-right {
+    top: 5%; /* Adjust position */
+    right: 5%; /* Bring it closer */
+    width: 100px; /* Slightly smaller for better fit */
+    transform: scale(4); /* Adjust scale */
+  }
+
+  .scale1 {
+    bottom: 2rem; /* Adjust position for visibility */
+    left: 50%; /* Center it more */
+    transform: scale(3.5); /* Make it larger */
+  }
+
+  .scale2 {
+    bottom: 2rem; /* Adjust position for visibility */
+    left: 75%; /* Shift closer to the center */
+    transform: scale(3.5); /* Make it larger */
+  }
 }

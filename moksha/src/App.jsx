@@ -14,8 +14,9 @@ const App = () => {
     <div className="scroll-container">
       <Landing></Landing>
       <AboutUs></AboutUs>
+      {/* 
       <Events></Events>
-      <ContactUs></ContactUs>
+      <ContactUs></ContactUs> */}
     </div>
 
      

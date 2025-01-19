@@ -2,7 +2,7 @@
 .scroll-container {
   display: flex; 
   flex-direction: row;
-  width: 380vw; 
+  width: 200vw;/*  380  */
   height: 100vh; 
   overflow: hidden;
   scroll-snap-type: x mandatory; 
